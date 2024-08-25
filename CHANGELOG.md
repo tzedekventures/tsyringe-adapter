@@ -1,5 +1,11 @@
 # tsyringe-adapter
 
+## 1.0.6
+
+### Patch Changes
+
+- d19ad8a: testing
+
 ## 1.0.5
 
 ### Patch Changes
