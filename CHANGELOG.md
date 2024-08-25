@@ -1,5 +1,11 @@
 # tsyringe-adapter
 
+## 1.0.3
+
+### Patch Changes
+
+- 82b2bc7: container integration
+
 ## 1.0.2
 
 ### Patch Changes
