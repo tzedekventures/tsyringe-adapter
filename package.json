@@ -1,5 +1,5 @@
 {
-    "name": "@tzedek-ventures/tsyringe-adapter",
+    "name": "tsyringe-adapter",
     "version": "1.0.1",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
