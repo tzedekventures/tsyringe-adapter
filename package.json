@@ -2,16 +2,20 @@
     "name": "tsyringe-adapter",
     "version": "1.0.0",
     "main": "dist/index.js",
+    "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build": "tsc"
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "lint": "tsc"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": "Tsyringe adapter for the autoInjectable feature on modern TypeScript versions (read issue #188 of tsyringe)",
     "devDependencies": {
-        "typescript": "^5.5.4"
+        "@changesets/cli": "^2.27.7",
+        "typescript": "^5.5.4",
+        "tsup": "^8.2.4"
     },
     "peerDependencies": {
         "reflect-metadata": "^0.2.2",
