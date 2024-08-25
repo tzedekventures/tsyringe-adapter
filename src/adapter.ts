@@ -1,7 +1,7 @@
 import { ParamInfo } from 'tsyringe/dist/typings/dependency-container'
 import { DelayedConstructor } from 'tsyringe/dist/typings/lazy-helpers'
 import { Dictionary, Transform } from 'tsyringe/dist/typings/types'
-import { container } from 'tsyringe'
+// import { container } from 'tsyringe'
 
 
 /** Constructor type */
@@ -113,7 +113,7 @@ export function formatErrorCtor(
  *
  * @return {Function} The class decorator
  */
-export function autoInjectable(): (target: constructor<any>) => any
+export function autoInjectable(container: any): (target: constructor<any>) => any
 {
     return function (target: constructor<any>): constructor<any>
     {
