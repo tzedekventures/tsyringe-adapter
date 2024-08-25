@@ -1,5 +1,11 @@
 # tsyringe-adapter
 
+## 1.0.4
+
+### Patch Changes
+
+- 1167b8b: types & exports
+
 ## 1.0.3
 
 ### Patch Changes
