@@ -87,7 +87,7 @@ export function formatErrorCtor(
  *
  * @return {Function} The class decorator
  */
-export function autoInjectable(container: any): (target: constructor<any>) => any
+export function autoInjectable(): (target: constructor<any>) => any
 {
     return function (target: constructor<any>): constructor<any>
     {
