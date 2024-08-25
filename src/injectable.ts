@@ -1,4 +1,4 @@
-import { constructor, typeInfo } from "./types"
+import { constructor, typeInfo } from './types'
 import { getParamInfo } from './helpers'
 
 /**

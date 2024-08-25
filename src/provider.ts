@@ -8,9 +8,7 @@ export interface FactoryProvider<T>
 }
 
 
-export function isFactoryProvider<T>(
-    provider: Provider<T>
-): provider is FactoryProvider<any>
+export function isFactoryProvider<T>(provider: Provider<T>): provider is FactoryProvider<any>
 {
     return !!(provider as FactoryProvider<T>).useFactory
 }
@@ -29,9 +27,7 @@ export interface ClassProvider<T>
 }
 
 
-export function isClassProvider<T>(
-    provider: Provider<T>
-): provider is ClassProvider<any>
+export function isClassProvider<T>(provider: Provider<T>): provider is ClassProvider<any>
 {
     return !!(provider as ClassProvider<T>).useClass
 }
@@ -43,9 +39,7 @@ export interface ValueProvider<T>
 }
 
 
-export function isValueProvider<T>(
-    provider: Provider<T>
-): provider is ValueProvider<T>
+export function isValueProvider<T>(provider: Provider<T>): provider is ValueProvider<T>
 {
     return (provider as ValueProvider<T>).useValue != undefined
 }
@@ -65,9 +59,7 @@ export interface TokenProvider<T>
 }
 
 
-export function isTokenProvider<T>(
-    provider: Provider<T>
-): provider is TokenProvider<any>
+export function isTokenProvider<T>(provider: Provider<T>): provider is TokenProvider<any>
 {
     return !!(provider as TokenProvider<T>).useToken
 }
@@ -84,17 +76,13 @@ export function isProvider(provider: any): provider is Provider
 }
 
 
-export function isNormalToken(
-    token?: InjectionToken<any>
-): token is string | symbol
+export function isNormalToken(token?: InjectionToken<any>): token is string | symbol
 {
     return typeof token === "string" || typeof token === "symbol"
 }
 
 
-export function isConstructorToken(
-    token?: InjectionToken<any>
-): token is constructor<any> | DelayedConstructor<any>
+export function isConstructorToken(token?: InjectionToken<any>): token is constructor<any> | DelayedConstructor<any>
 {
     return typeof token === "function" || token instanceof DelayedConstructor
 }

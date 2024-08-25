@@ -11,9 +11,7 @@ export interface TransformDescriptor
 }
 
 
-export function isTransformDescriptor(
-    descriptor: any
-): descriptor is TransformDescriptor
+export function isTransformDescriptor(descriptor: any): descriptor is TransformDescriptor
 {
     return (
         typeof descriptor === "object" &&
@@ -23,9 +21,7 @@ export function isTransformDescriptor(
 }
 
 
-export function isTokenDescriptor(
-    descriptor: any
-): descriptor is TokenDescriptor
+export function isTokenDescriptor(descriptor: any): descriptor is TokenDescriptor
 {
     return (
         typeof descriptor === "object" &&
@@ -52,11 +48,7 @@ function composeErrorMessage(msg: string, e: Error, indent = "    "): string
 }
 
 
-export function formatErrorCtor(
-    ctor: constructor<any>,
-    paramIdx: number,
-    error: Error
-): string
+export function formatErrorCtor(ctor: constructor<any>, paramIdx: number, error: Error): string
 {
     const [, params = null] = ctor.toString().match(/constructor\(([\w, ]+)\)/) || []
     const dep = formatDependency(params, paramIdx)

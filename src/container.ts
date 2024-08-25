@@ -76,10 +76,7 @@ class InternalDependencyContainer implements DependencyContainer
             let tokenProvider: TokenProvider<T> | null = provider
             while (tokenProvider != null)
             {
-                // ========================================================================================================
-                // TODO - tipado
-                // ========================================================================================================
-                const currentToken: any = tokenProvider.useToken
+                const currentToken = tokenProvider.useToken
                 if (path.includes(currentToken))
                 {
                     throw new Error(

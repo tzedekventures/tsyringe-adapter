@@ -8,22 +8,14 @@ export type PreResolutionInterceptor = {
 }
 
 
-
-export class PreResolutionInterceptors extends RegistryBase<
-    PreResolutionInterceptor
-> { }
+export class PreResolutionInterceptors extends RegistryBase<PreResolutionInterceptor> { }
+export class PostResolutionInterceptors extends RegistryBase<PostResolutionInterceptor> { }
 
 
 export type PostResolutionInterceptor = {
     callback: PostResolutionInterceptorCallback
     options: InterceptorOptions
 }
-
-
-
-export class PostResolutionInterceptors extends RegistryBase<
-    PostResolutionInterceptor
-> { }
 
 
 export class Interceptors
