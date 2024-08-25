@@ -1,0 +1,5 @@
+---
+"tsyringe-adapter": patch
+---
+
+testing
