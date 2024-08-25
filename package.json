@@ -18,8 +18,8 @@
     "description": "Tsyringe adapter for the autoInjectable feature on modern TypeScript versions (read issue #188 of tsyringe)",
     "devDependencies": {
         "@changesets/cli": "^2.27.7",
-        "typescript": "^5.5.4",
-        "tsup": "^8.2.4"
+        "tsup": "^8.2.4",
+        "typescript": "^5.5.4"
     },
     "peerDependencies": {
         "reflect-metadata": "^0.2.2",

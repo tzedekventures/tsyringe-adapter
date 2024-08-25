@@ -1,37 +1,11 @@
-import { ParamInfo } from 'tsyringe/dist/typings/dependency-container'
-import { DelayedConstructor } from 'tsyringe/dist/typings/lazy-helpers'
-import { Dictionary, Transform } from 'tsyringe/dist/typings/types'
-// import { container } from 'tsyringe'
+// import { ParamInfo } from 'tsyringe/dist/typings/dependency-container'
+// import { DelayedConstructor } from 'tsyringe/dist/typings/lazy-helpers'
+import { constructor, Transform } from 'tsyringe/dist/typings/types'
+import { getParamInfo } from './helpers'
+import { InjectionToken } from './types'
+import { container } from './container'
 
 
-/** Constructor type */
-type constructor<T> = {
-    new(...args: any[]): T
-}
-
-
-type InjectionToken<T = any> =
-    | constructor<T>
-    | string
-    | symbol
-    | DelayedConstructor<T>
-
-
-export const INJECTION_TOKEN_METADATA_KEY = "injectionTokens"
-
-
-export function getParamInfo(target: constructor<any>): ParamInfo[]
-{
-    const params: any[] = Reflect.getMetadata("design:paramtypes", target) || []
-    const injectionTokens: Dictionary<InjectionToken<any>> =
-        Reflect.getOwnMetadata(INJECTION_TOKEN_METADATA_KEY, target) || {}
-    Object.keys(injectionTokens).forEach(key =>
-    {
-        params[+key] = injectionTokens[key]
-    })
-
-    return params
-}
 
 
 export interface TransformDescriptor
