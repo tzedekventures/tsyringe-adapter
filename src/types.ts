@@ -227,3 +227,9 @@ export function isDisposable(value: any): value is Disposable
 
     return true
 }
+
+
+export interface Transform<TIn, TOut>
+{
+    transform: (incoming: TIn, ...args: any[]) => TOut
+}

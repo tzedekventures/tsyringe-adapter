@@ -22,7 +22,6 @@
         "typescript": "^5.5.4"
     },
     "peerDependencies": {
-        "reflect-metadata": "^0.2.2",
-        "tsyringe": "^4.8.0"
+        "reflect-metadata": "^0.2.2"
     }
 }

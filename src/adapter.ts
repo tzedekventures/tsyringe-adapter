@@ -1,6 +1,5 @@
-import { constructor, Transform } from 'tsyringe/dist/typings/types'
 import { getParamInfo } from './helpers'
-import { InjectionToken, TokenDescriptor } from './types'
+import { constructor, InjectionToken, TokenDescriptor, Transform } from './types'
 import { container } from './container'
 
 
