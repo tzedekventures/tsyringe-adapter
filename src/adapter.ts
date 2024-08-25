@@ -1,11 +1,7 @@
-// import { ParamInfo } from 'tsyringe/dist/typings/dependency-container'
-// import { DelayedConstructor } from 'tsyringe/dist/typings/lazy-helpers'
 import { constructor, Transform } from 'tsyringe/dist/typings/types'
 import { getParamInfo } from './helpers'
-import { InjectionToken } from './types'
+import { InjectionToken, TokenDescriptor } from './types'
 import { container } from './container'
-
-
 
 
 export interface TransformDescriptor
@@ -37,13 +33,6 @@ export function isTokenDescriptor(
         "token" in descriptor &&
         "multiple" in descriptor
     )
-}
-
-
-export interface TokenDescriptor
-{
-    token: InjectionToken<any>
-    multiple: boolean
 }
 
 
