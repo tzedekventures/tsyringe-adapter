@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "@tzedek-ventures/tsyringe-adapter",
     "version": "1.0.0",
+=======
+    "name": "tsyringe-adapter",
+    "version": "1.0.1",
+>>>>>>> cd25a24bab933c3f5d399f52751f088f5347d650
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
