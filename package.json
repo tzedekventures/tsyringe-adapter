@@ -10,8 +10,11 @@
         "release": "npm run build && changeset publish"
     },
     "keywords": [],
-    "author": "",
+    "author": "Luis Enrique - Tzedek Ventures",
     "license": "ISC",
+    "publishConfig": {
+        "access": "public"
+    },
     "description": "Tsyringe adapter for the autoInjectable feature on modern TypeScript versions (read issue #188 of tsyringe)",
     "devDependencies": {
         "@changesets/cli": "^2.27.7",
