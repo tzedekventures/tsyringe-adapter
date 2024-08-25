@@ -1,5 +1,11 @@
 # tsyringe-adapter
 
+## 1.0.5
+
+### Patch Changes
+
+- d35f8c5: removing tsyringe
+
 ## 1.0.4
 
 ### Patch Changes
